@@ -1,0 +1,11 @@
+- name: Create a new Linode instance.
+  linode.cloud.instance:
+    state: "present"
+    label: "sat-nano-au"
+    type: "g6-nanode-1"
+    region: "au-mel"
+    image: "linode/ubuntu24.10"
+    root_pass: "Esfera3010"
+    private_ip: false
+    tags:
+      - "saturno"
